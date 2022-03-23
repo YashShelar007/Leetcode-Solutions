@@ -1,2 +1,2 @@
 # Leetcode-Solutions
-Data structures module
+Data structures module #JavaScript
