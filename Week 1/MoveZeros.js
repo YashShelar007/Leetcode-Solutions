@@ -32,3 +32,32 @@ var moveZeroes = function(nums) {
         }
     }
 };
+
+// my improved solution O(n)
+var moveZeroes = function(nums) {
+    
+    var currPosition = 0;
+    // check input
+    if(!nums || nums.length === 0)
+    {
+        print("HMM! that does not look good");
+    }
+
+    if(nums.length === 1)
+    {
+        return nums
+    }
+    else
+    {
+        for(let i = 0; i < nums.length; i++)
+        {
+            if(nums[i] !== 0)
+            {
+                var temp = nums[currPosition]
+                nums[currPosition] = nums[i];
+                nums[i] = temp;
+                currPosition++;
+            }
+        }
+    }
+};
