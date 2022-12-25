@@ -1,4 +1,5 @@
 // move zeros problem
+// Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 // my initial solution O(n^2)
 
 var moveZeroes = function(nums) {
