@@ -1,6 +1,6 @@
-//Two Sum
-
-// my solution O(n^2)
+// Two Sum
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+// my initial nested for loop solution O(n^2)
 
 var twoSum = function(nums, target) {
     
@@ -30,7 +30,7 @@ var twoSum = function(nums, target) {
     }
 };
 
-// hashmaps solution O(n)
+// my improved hashmaps solution O(n)
 var twoSum = function(nums, target) {
     
     var resultArr = [];
