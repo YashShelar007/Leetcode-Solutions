@@ -1,7 +1,7 @@
 // move zeros problem
 // Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-// my initial solution O(n^2)
 
+// my initial nested for loop solution O(n^2)
 var moveZeroes = function(nums) {
     
     var currNumer = null;
@@ -34,7 +34,7 @@ var moveZeroes = function(nums) {
     }
 };
 
-// my improved solution O(n)
+// my improved swapping solution O(n)
 var moveZeroes = function(nums) {
     
     var currPosition = 0;
