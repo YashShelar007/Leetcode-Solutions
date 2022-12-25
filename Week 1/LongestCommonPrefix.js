@@ -22,3 +22,23 @@ var longestCommonPrefix = function(strs) {
 
     return currLongest;
 };
+
+// My improved sorting (Tim sort) solution O(nlogn)
+var longestCommonPrefix = function(strs) {
+    var currLongest = "";
+    strs.sort();
+
+    var firstWord = strs[0];
+    var lastWord = strs[strs.length - 1];
+
+    for(let i = 0; i < strs[0].length; i++) {
+        if(firstWord[i] === lastWord[i]) {
+            currLongest = currLongest + firstWord[i];
+        }
+        else {
+            return currLongest;
+        }
+    }
+
+    return currLongest;
+};
