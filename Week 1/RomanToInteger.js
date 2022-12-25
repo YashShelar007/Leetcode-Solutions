@@ -1,7 +1,7 @@
 // Roman To Integer
 // Given a roman numeral, convert it to an integer.
-// My initial solution O(n)
 
+// My initial if else based solution O(n)
 var romanToInt = function(s) {
     var sum = 0;
 
